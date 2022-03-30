@@ -8,21 +8,66 @@ const cors = require('cors');
 //Our own Google search quote array
 
 const Google = [
-  {id:1, name:''},
-  {id:2, name: ''},
-  {id:3, name: ''},
-  {id:4, name:''},
-  {id:5, name:''},
-  {id:6, name:''},
-  {id:7, name:''},
-  {id:8, name:''},
-  {id:9, name:''},
-  {id:10, name:''},
-  {id:11, name:''},
-  {id:12, name:''},
-  {id:13, name:''},
-  {id:14, name:''},
-  {id:15, name:''}
+  {
+    id:1,
+    search:'',
+    summary: '',
+    Link: ''
+},
+{
+    id:2,
+    search:'',
+    summary: '',
+    Link: ''
+},
+{
+    id:3,
+    search:'',
+    summary: '',
+    Link: ''
+},
+{
+    id:4,
+    search:'',
+    summary: '',
+    Link: ''
+},
+{
+    id:5,
+    search:'',
+    summary: '',
+    Link: ''
+},
+{
+    id:6,
+    search:'',
+    summary: '',
+    Link: ''
+},
+{
+    id:7,
+    search:'',
+    summary: '',
+    Link: ''
+},
+{
+    id:8,
+    search:'',
+    summary: '',
+    Link: ''
+},
+{
+    id:9,
+    search:'',
+    summary: '',
+    Link: ''
+},
+{
+    id:10,
+    search:'',
+    summary: '',
+    Link: ''
+},
 ]
 
 
