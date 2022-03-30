@@ -1,0 +1,21 @@
+{
+  "name": "suiiiiiiiiiiiiiiiiiii",
+  "version": "1.0.0",
+  "description": "SUIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --watchAll",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Eluented/SUIIIIIIIIIIIIIIIIIII.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Eluented/SUIIIIIIIIIIIIIIIIIII/issues"
+  },
+  "homepage": "https://github.com/Eluented/SUIIIIIIIIIIIIIIIIIII#readme"
+}
