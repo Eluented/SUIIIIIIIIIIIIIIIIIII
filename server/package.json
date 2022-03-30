@@ -17,5 +17,12 @@
   "bugs": {
     "url": "https://github.com/Eluented/SUIIIIIIIIIIIIIIIIIII/issues"
   },
-  "homepage": "https://github.com/Eluented/SUIIIIIIIIIIIIIIIIIII#readme"
+  "homepage": "https://github.com/Eluented/SUIIIIIIIIIIIIIIIIIII#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.3"
+  }
 }

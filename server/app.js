@@ -8,7 +8,7 @@ const cors = require('cors');
 //Our own Google search quote array
 
 const Google = [
-    {
+      {
         id: 1,
         search: 'GeoGuesser',
         summary: 'This website is a game where you are dropped into a random place in the world and you need to use clues to identify where you are.',
@@ -91,6 +91,7 @@ app.get('/', (req, res) => {
 })
 
 // To do: Create a route for retrieving all quotes
+
 app.get('/google-searches', (req, res) => {
     res.statusCode = 200;
     res.send(Google)
