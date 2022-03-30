@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
+    "expree": "^0.1.6",
     "express": "^4.17.3"
   }
 }

@@ -8,7 +8,7 @@ const cors = require('cors');
 //Our own Google search quote array
 
 const Google = [
-      {
+    {
         id: 1,
         search: 'GeoGuesser',
         summary: 'This website is a game where you are dropped into a random place in the world and you need to use clues to identify where you are.',
@@ -70,8 +70,14 @@ const Google = [
     },
 ]
 
+JSON.stringify(Google);
 
-//cors - this is the structure or the API Url and what data you willl recieve
+
+
+function getRandomSearch() {
+    const randomNum = Math.floor(Math.random() * Google.length)
+    return Google[randomNum]; 
+  } 
 
 app.use(cors());
 
@@ -93,18 +99,39 @@ app.get('/', (req, res) => {
 // To do: Create a route for retrieving all quotes
 
 app.get('/google-searches', (req, res) => {
+    try{
     res.statusCode = 200;
     res.send(Google)
+    } catch(error) {
+        console.error(error);
+    } finally {
+        console.log("Could not recive request")
+    }
 })
 // To do: Create a route for retrieving a random quote
 app.get('/google-searches/:id', (req, res) => {
+    try {
     res.statusCode = 200;
     const GoogleID = req.params.id - 1;
     const selectedGoogle = Google[GoogleID];
     res.send(selectedGoogle);
+    } catch(error) {
+        console.error(error);
+    } finally {
+        console.log("Could not recive request")
+    }
 })
 // To do: Refine this route and add handling for out-of-range IDs
-
+app.get('/google-random', (req, res) => {
+    try {
+    res.statusCode = 200;
+    res.send(getRandomSearch());
+    } catch(error) {
+        console.error(error);
+    } finally {
+        console.log("Could not recive request")
+    }
+})
 // To do: Get the server running
 
 module.exports = app, httpStatusCodes;
