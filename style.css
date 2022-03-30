@@ -1,5 +1,48 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+body, input, button {
+    font-size: 14px;
+    font-family: arial,sans-serif;
+    color: #202124;
+}
+
 .header {
     display: flex;
     align-items: center;
     padding: 6px;
+}
+
+a {
+    text-decoration: none;
+    color: #202124;
+    display: inline-block;
+    padding: 5px;
+    margin: 0 5px;
+}
+
+.middle-to-right{
+    flex-grow: 1;
+    display: inline-block;
+}
+
+.top-right{
+    display: flex;
+    float: right;
+    padding-left: 0;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+}
+
+.svg-user{
+    position: relative;
+    display: inline-block;
+}
+
+.svg-container {
+    padding-left: 4px;
+    padding: 4px;
+    vertical-align: middle;
+    display: inline-block;
 }
