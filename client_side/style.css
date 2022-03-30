@@ -12,7 +12,7 @@ body, input, button {
     display: flex;
     align-items: center;
     padding: 6px;
-    gap: 6px;
+    gap: 2px;
 }
 
 a {
@@ -31,7 +31,7 @@ a {
 .top-right{
     display: flex;
     justify-content: space-between;
-    gap: 10px;
+    gap: 3px;
     float: right;
     padding-left: 0;
     flex: 0 0 auto;
@@ -44,7 +44,7 @@ a {
 }
 
 .svg-container {
-    width: 4vw;
+    width: 3vw;
     cursor: pointer;
     flex-direction: column;
     justify-content: center;
