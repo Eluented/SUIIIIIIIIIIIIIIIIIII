@@ -24,6 +24,13 @@ function randomFont(){
   return fontType[num];
 }
 
+function randomColour(){
+  let colorType = ['\"red\"', '\"purple\"', '\"green\"', "\"blue\"", "\"yellow\"", "\"orange\""];
+  num = Math.floor(Math.random()*colorType.length);
+  console.log(colorType[num])
+  return colorType[num];
+}
+
 const getFeelingLucky = async function (e)  {
     e.preventDefault()
     try {
@@ -37,10 +44,11 @@ const getFeelingLucky = async function (e)  {
 
 
     titleSection.innerText = title
-    titleSection.style.fontFamily = randomFont()
+    titleSection.style.fontFamily = randomFont() // selects random font some fonts dont work :( sad face
+    titleSection.style.color = randomColour() // selects random color doesnt work i cba
     summarySection.innerText = summary
     linkSection.innerText = link
-    linkSection.style.textcon
+    linkSection.href = `${link}`
 
     console.log(title, summary, link)
 
